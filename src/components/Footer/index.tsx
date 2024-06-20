@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <FooterBackground>
       <Container>
-        <img src="public/logo.png" alt="Logo" />
+        <img src="/logo.png" alt="Logo" />
         <SocialMidia>
           <a href="https://www.instagram.com">
             <img src="/Vetores/instagram.png" alt="Logo Instagram" />
