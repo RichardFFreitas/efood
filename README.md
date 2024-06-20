@@ -1,30 +1,55 @@
-# React + TypeScript + Vite
+<h1 align="center" style="font-weight: bold;">eFood 🍣</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+ <a href="#tech">Tecnologias</a> • 
+ <a href="#started">Dando inicio</a> • 
+  <a href="#colab">Colaboradores</a> •
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+    <b>Um site para restaurantes, para realizar pedidos e visualizar o cardápio.</b>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+     <a href="PROJECT__URL">📱 Visite este projeto.</a>
+</p>
 
-## Expanding the ESLint configuration
+<h2 id="layout">🎨 Layout</h2>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<p align="center">
+  <h1>Home</h1>
+    <img src="src/assets/Prints/Home.png" alt="Image Example" width="400px">
+</p>
 
-- Configure the top-level `parserOptions` property like this:
+<h2 id="technologies">💻 Technologies</h2>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- React
+- TypeScript
+- Styled Components
+- React Router
+
+<h2 id="started">🚀 Dando inicio</h2>
+
+<h3>Pré-requisitos</h3>
+
+- [Vite](https://vitejs.dev)
+- [Styled Components](https://styled-components.com)
+- [Nodejs](https://nodejs.org/en)
+
+<h3>Clonando</h3>
+
+Como Clonar este projeto.
+
+```bash
+git clone https://github.com/RichardFFreitas/efood
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<h3>Iniciando</h3>
+
+Como iniciar o projeto
+
+```bash
+cd efood
+npm i
+npm run dev
+```
