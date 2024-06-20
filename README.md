@@ -11,14 +11,14 @@
 </p>
 
 <p align="center">
-     <a href="PROJECT__URL">📱 Visite este projeto.</a>
+     <a href="https://efood-ca24ikzlf-richard-f-freitas-projects.vercel.app">📱 Visite este projeto.</a>
 </p>
 
 <h2 id="layout">🎨 Layout</h2>
 
 <p align="center">
   <h1>Home</h1>
-    <img src="src/assets/Prints/Home.png" alt="Image Example" width="400px">
+    <img src="/Prints/Home.png" alt="Image Example" width="400px">
 </p>
 
 <h2 id="technologies">💻 Technologies</h2>
