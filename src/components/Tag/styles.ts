@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { colors } from '../../styles'
 
 export const TagS = styled.div`
-  background-color: ${colors.whit};
+  background-color: ${colors.white};
   color: ${colors.peach};
   display: inline-block;
   padding: 6px 4px;

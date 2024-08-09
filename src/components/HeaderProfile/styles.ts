@@ -25,6 +25,7 @@ export const Logo = styled.img`
 `
 export const HomeLink = styled(Link)`
   text-decoration: none;
+  color: ${colors.pink};
 `
 
 export const CabecalhoImg = styled.div`

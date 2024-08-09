@@ -44,11 +44,10 @@ export const CardInfos = styled.div`
 `
 
 export const ButtonLink = styled(Link)`
-  color: ${colors.white};
-  background-color: ${colors.white};
+  color: ${colors.peach};
+  background-color: ${colors.pink};
   text-decoration: none;
   padding: 4px 6px;
-  color: ${colors.white2};
   font-weight: bold;
 `
 

@@ -1,4 +1,4 @@
-import { HeroContainer } from "./styles.ts";
+import { HeroContainer } from "./styles";
 
 const Hero = () => {
   return (
