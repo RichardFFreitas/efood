@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const colors = {
   pink: "#E66767",
@@ -14,8 +14,6 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
-  text-decoration: none;
-  list-style: none;
 }
 
 body{
@@ -23,10 +21,8 @@ body{
     color: ${colors.pink};
 }
 
-.container {
-    max-width: 1366px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 `;
+export const Container = styled.div`
+  width: 100%;
+  margin: 0 auto;
+`
