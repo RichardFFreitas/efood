@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-     <a href="https://efood-ca24ikzlf-richard-f-freitas-projects.vercel.app">📱 Visite este projeto.</a>
+     <a href="https://efood-murex.vercel.app">📱 Visite este projeto.</a>
 </p>
 
 <h2 id="layout">🎨 Layout</h2>
