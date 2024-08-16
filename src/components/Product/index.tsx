@@ -3,8 +3,11 @@ import { useState } from 'react'
 import { Modal, ModalContent, ProductCard } from './styles'
 
 import close from '../../assets/images/close.svg'
+import { useDispatch } from 'react-redux'
+import { add, open } from '../../store/reducers/cart'
 
 type Props = {
+  id: number
   nome: string
   descricao: string
   foto: string
@@ -12,15 +15,24 @@ type Props = {
   preco: number
 }
 
-const Product = ({ nome, descricao, porcao, foto, preco }: Props) => {
-  const formataPreco = (preco = 0) => {
-    return new Intl.NumberFormat('pt-BR', {
-      style: 'currency',
-      currency: 'BRL'
-    }).format(preco)
+export const formataPreco = (preco = 0) => {
+  return new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL'
+  }).format(preco)
+}
+
+const Product = ({id, nome, descricao, porcao, foto, preco }: Props) => {
+  const [isVisible, setIsVisible] = useState(false)
+  const dispatch = useDispatch()
+
+  const addToCart = () => {
+    const product = { id, nome, descricao, porcao, foto, preco }
+    dispatch(add(product))
+    dispatch(open())
   }
 
-  const [isVisible, setIsVisible] = useState(false)
+  
 
   const showModal = () => {
     if (isVisible) {
@@ -59,9 +71,9 @@ const Product = ({ nome, descricao, porcao, foto, preco }: Props) => {
               </div>
               <p>{descricao}</p>
               <p>Porção: {porcao}</p>
-              <button>{`Adicionar ao carrinho - ${formataPreco(
-                preco
-              )}`}</button>
+              <button
+                onClick={addToCart}
+              >{`Adicionar ao carrinho - ${formataPreco(preco)}`}</button>
             </div>
           </div>
         </ModalContent>

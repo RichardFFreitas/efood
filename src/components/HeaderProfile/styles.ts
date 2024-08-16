@@ -17,6 +17,10 @@ export const Cabecalho = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    p {
+      cursor: pointer;
+    }
   }
 `
 

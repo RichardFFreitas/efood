@@ -5,25 +5,26 @@ export const ProductCard = styled.div`
   width: 320px;
   padding: 8px;
   background-color: ${colors.pink};
+  color: ${colors.peach};
   display: flex;
   flex-direction: column;
   position: relative;
 
   img {
     height: 170px;
+    object-fit: cover;
   }
 
   h2 {
     margin: 8px;
     font-weight: 900;
     font-size: 16px;
-    color: ${colors.white};
   }
 
   p {
     font-size: 14px;
     margin-bottom: 8px;
-    color: ${colors.white};
+    color: ${colors.peach};
   }
 
   button {
@@ -49,9 +50,11 @@ export const Modal = styled.div`
   align-items: center;
   z-index: 1;
   display: none;
+
   &.isVisible {
     display: flex;
   }
+
   .overlay {
     position: absolute;
     top: 0;
@@ -66,11 +69,13 @@ export const ModalContent = styled.div`
   position: relative;
   max-width: 1024px;
   z-index: 1;
+
   > div {
     display: flex;
     padding: 0 0 32px 32px;
     background-color: ${colors.pink};
     color: ${colors.peach};
+
     > img {
       width: 280px;
       height: 280px;
@@ -78,16 +83,20 @@ export const ModalContent = styled.div`
       object-fit: cover;
       margin-top: 32px;
     }
+
     div {
       display: block;
+
       div {
         display: flex;
         justify-content: space-between;
+
         h2 {
           font-size: 21px;
           font-weight: 900;
           margin-top: 32px;
         }
+
         img {
           height: 16px;
           width: 16px;
@@ -95,17 +104,20 @@ export const ModalContent = styled.div`
           cursor: pointer;
         }
       }
+
       p {
         margin: 16px 0;
         font-size: 14px;
       }
+      
       button {
         border: none;
         padding: 4px 7px;
         font-size: 14px;
         font-weight: 700;
-        background-color: ${colors.pink};
+        background-color: ${colors.peach};
         color: ${colors.pink};
+        cursor: pointer;
       }
     }
   }
