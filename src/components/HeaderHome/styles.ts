@@ -18,7 +18,7 @@ export const Slogan = styled.p`
   line-height: 40px;
   font-weight: bold;
   font-size: 36px;
-  width: 540px;
+  width: 570px;
   text-align: center;
   margin-top: 140px;
 `

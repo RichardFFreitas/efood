@@ -6,6 +6,7 @@ export const colors = {
   white: "#FFFFFF",
   yellow: "#FFB930",
   white2: "#FFF8F2",
+  input: "#4B4B4B"
 };
 
 export const GlobalStyle = createGlobalStyle`

@@ -3,7 +3,7 @@ import { colors } from '../../styles'
 import { Link } from 'react-router-dom'
 
 export const Card = styled.div`
-  border: 1px solid ${colors.white};
+  border: 1px solid ${colors.pink};
   max-width: 472px;
   width: 100%;
   font-size: 14px;

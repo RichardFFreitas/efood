@@ -1,5 +1,14 @@
 import styled from 'styled-components'
 import { colors } from '../../styles'
+import { Link } from 'react-router-dom'
+
+type InputProps = {
+  maxWidth?: string
+}
+
+type InputGroupProps = {
+  maxWidth?: string
+}
 
 export const CartContainer = styled.div`
   position: fixed;
@@ -11,11 +20,16 @@ export const CartContainer = styled.div`
   justify-content: flex-end;
   z-index: 1;
   font-size: 14px;
+  color: ${colors.white2};
 
   &.is-open {
     display: flex;
   }
 `
+export const CartMenu = styled.div`
+  margin-bottom: 20px;
+`
+
 export const Overlay = styled.div`
   position: absolute;
   top: 0;
@@ -62,6 +76,8 @@ export const RemoveButton = styled.button`
   height: 16px;
   right: 8px;
   bottom: 8px;
+  border: none;
+  cursor: pointer;
 `
 export const Total = styled.div`
   color: ${colors.peach};
@@ -73,6 +89,93 @@ export const CartButton = styled.button`
   width: 100%;
   border: none;
   color: ${colors.pink};
+  background-color: ${colors.peach};
+  margin-bottom: 8px;
   font-weight: 700;
   padding: 4px;
+  cursor: pointer;
+`
+export const CartButtonLink = styled(Link)`
+  max-width: 100%;
+  width: 100%;
+  border: none;
+  color: ${colors.pink};
+  background-color: ${colors.peach};
+  font-weight: 700;
+  padding: 4px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  cursor: pointer;
+`
+export const DeliveryMenu = styled.div`
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  > div {
+    margin-bottom: 24px;
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+`
+export const PaymentMenu = styled.div`
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  > div {
+    margin-bottom: 24px;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+`
+export const ConfirmationMenu = styled.div`
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  p {
+    margin-bottom: 22px;
+  }
+`
+export const InputGroup = styled.div<InputGroupProps>`
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  width: 100%;
+  label {
+    margin-bottom: 8px;
+  }
+  input {
+    background-color: ${colors.peach};
+    color: ${colors.input};
+    border: none;
+    height: 32px;
+    width: 100%;
+    max-width: ${(props) => props.maxWidth};
+    &.error {
+      border: 2px solid red;
+    }
+  }
+`
+
+export const Input = styled.input<InputProps>`
+  background-color: ${colors.peach};
+  color: ${colors.input};
+  border: none;
+  height: 32px;
+  width: 100%;
+  max-width: ${(props) => props.maxWidth};
+  &.error {
+    border: 2px solid red;
+  }
 `
