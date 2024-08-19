@@ -18,7 +18,15 @@
 
 <p align="center">
   <h1>Home</h1>
-    <img src="/Prints/Home.png" alt="Image Example" width="400px">
+    <img src="src/assets/images/home.png" alt="Image Example" width="400px">
+</p>
+<p align="center">
+  <h1>Restaurant</h1>
+    <img src="src/assets/images/Restaurant.png" alt="Image Example" width="400px">
+</p>
+<p align="center">
+  <h1>Cart</h1>
+    <img src="src/assets/images/Cart.png" alt="Image Example" width="400px">
 </p>
 
 <h2 id="technologies">💻 Technologies</h2>
@@ -27,6 +35,8 @@
 - TypeScript
 - Styled Components
 - React Router
+- Yup
+- Web Vitals
 
 <h2 id="started">🚀 Dando inicio</h2>
 
